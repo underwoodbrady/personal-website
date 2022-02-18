@@ -1,0 +1,100 @@
+body {
+    overflow-y: auto;
+}
+
+
+.header {
+    font-weight: 300;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.past {
+    top: 100px;
+}
+
+.current {
+    top: 1130px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.past-grid {
+    top: 200px;
+}
+
+.current-grid {
+    top: 1230px;
+}
+
+.project {
+    position: relative;
+    background: rgba(0, 0, 0, 0.04);
+    width: 420px;
+    height: 250px;
+    margin: 25px;
+    padding: 25px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.project img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+.project h3 {
+    font-weight: 300;
+    font-size: 2em;
+    text-align: left;
+}
+
+.project button {
+    padding: 12px 32px;
+    font-size: 1.2em;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 850px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+
+    .project {
+        width: 320px;
+        height: 190.5px;
+        font-size: 0.75em;
+    }
+    
+    .past-grid{
+        top:180px;
+    }
+    
+    .past{
+        top:80px;
+    }
+
+    .current-grid {
+        top: 1770px;
+    }
+
+    .current {
+        top: 1670px;
+    }
+
+}

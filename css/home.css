@@ -1,0 +1,67 @@
+#content {
+    position: absolute;
+    left:50%;
+    top: 52.5%;
+    transform: translate(-50%,-50%);
+}
+
+#left-text {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    padding: 50px 35px 50px 100px;
+    min-width: 500px;
+    transform: translate(-50%, -50%);
+}
+
+#left-text h2 {
+    font-weight: 300;
+    font-size: 3.2em;
+    padding-bottom: 5px;
+}
+
+#left-text p {
+    font-weight: 300;
+    font-size: 1.6em;
+    padding: 10px 0;
+}
+
+#left-text button {
+    padding: 10px 35px;
+    margin: 40px calc(26% - 35px);
+}
+
+#right-image {
+    position: absolute;
+    width: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#right-image img {
+    width: 75%;
+    min-width: 300px;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 850px) {
+
+    /*Mobile*/
+    
+    #content{
+        position: relative;
+    }
+    
+    #left-text {
+        left: 50%;
+        top: 80px;
+        transform: translateX(-50%);
+        min-width: 310px;
+        padding: 20px 25px;
+        font-size: 0.9em;
+    }
+
+    #right-image {
+        display: none;
+    }
+}

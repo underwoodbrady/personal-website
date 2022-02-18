@@ -1,0 +1,3 @@
+- add canonical tag to each page (did for each main page, not sure if its worth it for each project)
+
+-use gzipping for future project?
